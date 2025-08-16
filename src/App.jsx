@@ -76,7 +76,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [response, setResponse] = useState("");
 
-  // 🔹 Review function
+
   async function reviewCode() {
     setResponse("");
     setLoading(true);
@@ -107,7 +107,7 @@ Code: ${code}`,
     setLoading(false);
   }
 
-  // 🔹 Fix code function
+
   async function fixCode() {
     if (code === "") {
       alert("Please enter some code to fix.");
@@ -130,7 +130,7 @@ Code:
 ${code}`,
       });
 
-      setCode(response.text); // ✅ Replace editor content with fixed code
+      setCode(response.text);
     } catch (error) {
       console.error(error);
       alert("Error while fixing code.");
@@ -151,32 +151,32 @@ ${code}`,
               options={options}
               styles={customStyles}
             />
-            <button 
-              onClick={fixCode} 
+            <button
+              onClick={fixCode}
               className="btnNormal bg-zinc-900 min-w-[120px] transition-all hover:bg-zinc-800"
             >
               Fix code
             </button>
-            <button 
+            <button
               onClick={() => {
                 if (code === "") {
                   alert("Please enter some code to review.");
                 } else {
                   reviewCode();
                 }
-              }} 
+              }}
               className="btnNormal bg-zinc-900 min-w-[120px] transition-all hover:bg-zinc-800"
             >
               Review
             </button>
           </div>
 
-          <Editor 
-            height="100%" 
-            theme='vs-dark' 
-            language={selectedOption.value} 
-            value={code} 
-            onChange={(e) => setCode(e)} 
+          <Editor
+            height="100%"
+            theme='vs-dark'
+            language={selectedOption.value}
+            value={code}
+            onChange={(e) => setCode(e)}
           />
         </div>
         <div className="right overflow-scroll !p-[10px] bg-zinc-900 w-[50%] h-[100%] ">

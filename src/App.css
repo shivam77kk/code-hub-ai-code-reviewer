@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,19 +12,19 @@ body{
   overflow: hidden;
 }
 
-.css-b62m3t-container{
+.css-b62m3t-container {
   width: 65%;
 }
 
-.css-1mi3hag-control{
+.css-1mi3hag-control {
   width: 100%;
 }
 
-.css-sl4pg4-control{
+.css-sl4pg4-control {
   width: 30% !important;
 }
 
-.btnNormal{
+.btnNormal {
   padding: 10px;
   color: #fff;
   border-radius: 10px;
@@ -33,18 +33,18 @@ body{
   cursor: pointer;
 }
 
-p{
+p {
   margin-top: 10px !important;
   margin-bottom: 10px !important;
   color: gray;
 }
 
-p > strong{
+p>strong {
   font-size: 20px !important;
   color: #fff;
 }
 
-ul li{
+ul li {
   color: gray;
   margin-top: 10px !important;
   margin-bottom: 10px !important;
@@ -55,23 +55,21 @@ li strong {
   color: #fff;
 }
 
-pre{
+pre {
   background-color: #121214 !important;
   padding: 10px;
   color: #fff;
   overflow: auto;
 }
 
-pre::-webkit-scrollbar{
- display: none;
+pre::-webkit-scrollbar {
+  display: none;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #030303;
 }
